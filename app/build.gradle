@@ -1,8 +1,10 @@
 apply plugin: 'com.android.application'
 
+boolean needDebugger = hasProperty('debugger') && debugger.toBoolean()
+
 android {
     compileSdkVersion 21
-    buildToolsVersion "21.1.2"
+    buildToolsVersion "22.0.1"
 
     defaultConfig {
         applicationId "lt.neworld.roboelectric_android_unit_test_support"
@@ -15,6 +17,12 @@ android {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    testOptions {
+        unitTests.all {
+            debug needDebugger
         }
     }
 }

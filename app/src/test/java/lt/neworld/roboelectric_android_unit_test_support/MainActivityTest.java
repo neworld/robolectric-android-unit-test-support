@@ -4,10 +4,11 @@ import android.widget.TextView;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.robolectric.Robolectric;
+import org.robolectric.RobolectricTestRunner;
 
 import static org.fest.assertions.api.ANDROID.assertThat;
 
-@RunWith(MyTestRunner.class)
+@RunWith(RobolectricTestRunner.class)
 public class MainActivityTest {
     @Test
     public void testInit() throws Exception {

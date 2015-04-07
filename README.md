@@ -1,4 +1,4 @@
-A sample Android app which shows how to use and run [Roboelectric](http://robolectric.org/)
+A sample Android app which shows how to use and run [Robolectric](http://robolectric.org/)
 using [Android Unit Testing Support](http://tools.android.com/tech-docs/unit-testing-support)
 
 Don't forget enable [Experimental Unit Testing support](http://tools.android.com/_/rsrc/1423155661989/tech-docs/unit-testing-support/fveMJjOBb2.png?height=87&width=1200)
@@ -6,7 +6,7 @@ Don't forget enable [Experimental Unit Testing support](http://tools.android.com
 To Do
 ====
 
-1. Avoid creating MyTestRunner to configure properties
+  - [x] ~~Avoid creating MyTestRunner to configure properties~~
 
 License
 =======
